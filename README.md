@@ -13,6 +13,8 @@ git clone http://github.com/Mostfa-Adel
 install dependencies 
 ```sh 
 composer install
+npm install
+np, run dev
 ```
 create mysql database with name 'restaurant'  
 import database form main structre directory 
