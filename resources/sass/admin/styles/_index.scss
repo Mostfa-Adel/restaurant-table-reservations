@@ -1,0 +1,15 @@
+// Write (or import) your styles here
+// for responsive vue-modal
+.v--modal-box.v--modal{
+    max-width:100%!important;
+    height:auto!important;
+    min-height:330px!important;
+}
+@media (max-width: 500px) {
+    .v--modal-box.v--modal{
+        left:0!important;
+    }
+    .dropdown.drop-down{
+        z-index:9999!important;
+    }
+}
