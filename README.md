@@ -13,6 +13,8 @@ git clone http://github.com/Mostfa-Adel
 install dependencies 
 ```sh 
 composer install
+npm install
+np, run dev
 ```
 create mysql database with name 'restaurant'  
 import database form main structre directory 
@@ -21,5 +23,7 @@ then
 ```sh 
 php artisan ser
 ```
-now you can login with employee number: 5488  password: password123456
+now you can login with employee number as admin: 5488  password: password123456
+as employee: 7896  password: password123456
 from this link http://localhost:8000/admin/login to access the admin panel
+
