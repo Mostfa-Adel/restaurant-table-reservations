@@ -26,8 +26,8 @@ class UpdateRestaurantTable extends FormRequest
     public function rules(): array
     {
         return [
-            'number_of_seats' => ['required', 'integer','min:1', 'max:'.\app\Services\Settings::getMaxSeatsPerTable()],
-            'table_number' => ['required', 'integer'],
+            'number_of_seats' => ['required', 'integer','min:1', 'max:'.\App\Services\Settings::getMaxSeatsPerTable()],
+            'table_number' => ['sometimes', 'required', 'integer', Rule::unique('restaurant_tables', 'table_number')->ignore($this->restaurantTable->getKey(), $this->restaurantTable->getKeyName())],
             
         ];
     }
